@@ -1,0 +1,176 @@
+.footer-container {
+    height: 150px;
+    width: 100vw;
+    background-color: teal;
+    margin-top: 25px;
+    box-shadow: 3px 2px 4px;
+    border-radius: 7px;
+    padding: 15px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.icon {
+    font-size: 60px;
+    margin-top: 10px;
+    display: flex;
+    gap: 20px;
+}
+.icon i {
+    text-align: center;
+}
+.icon a {
+    text-decoration: none;
+}
+.icon a button {
+    border: 2px solid black;
+    color: #C5221F;
+    height: 50px;
+    width: 120px;
+    border-radius: 15px;
+    font-size: 22px;
+    position: relative;
+    bottom: 18px;
+    background-color: rgb(23, 220, 220);
+    transition: all 0.3s ease-in;
+}
+.icon a button:hover {
+    transform: scale(1.1);
+    color: white;
+    background-color: #C5221F;
+    cursor: pointer;
+}
+
+.linkedin {
+    color: rgb(6, 67, 128);
+    transition: all 0.3s ease-in;
+}
+.linkedin:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.facebook {
+    color: #193268;
+    transition: all 0.3s ease-in;
+}
+.facebook:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.insta {
+    color: #ca4021;
+    transition: all 0.3s ease-in;
+}
+.insta:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.x {
+    transition: all 0.3s ease-in;
+}
+.x:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Text Adjustments */
+.footer-container small {
+    font-size: 18px;
+    text-align: center;
+    color: black;
+    
+}
+.reserve{
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Media Queries */
+
+/* For small screens (up to 600px) */
+@media (max-width: 600px) {
+    .footer-container {
+        padding: 10px;
+    }
+    .footer {
+        flex-direction: column;
+    }
+    .icon {
+        font-size: 40px;
+        margin-top: 10px;
+        gap: 15px;
+    }
+    .icon a button {
+        width: 110%;
+        font-size: 18px;
+        height: 40px;
+        position: relative;
+        bottom: 10px;
+    }
+    .footer-container small {
+        font-size: 16px;
+        margin-top: 15px;
+        
+    }
+    .reserve{
+        text-align: center;
+    }
+    .linkedin {
+        color: rgb(6, 67, 128);
+        transition: all 0.3s ease-in;
+    }
+    .linkedin:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .facebook {
+        color: #193268;
+        transition: all 0.3s ease-in;
+    }
+    .facebook:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .insta {
+        color: #ca4021;
+        transition: all 0.3s ease-in;
+    }
+    .insta:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+    .x {
+        transition: all 0.3s ease-in;
+    }
+    .x:hover {
+        transform: scale(1.1);
+        cursor: pointer;
+    }
+}
+
+/* For medium screens (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .footer-container {
+        padding: 15px;
+    }
+    .icon {
+        font-size: 50px;
+        gap: 20px;
+    }
+    .icon a button {
+        width: 140px;
+        font-size: 18px;
+        height: 50px;
+        position: relative;
+        bottom: 15px;
+    }
+    .footer-container small {
+        font-size: 20px;
+        margin-top: 25px;
+        margin-left: 195px;
+    }
+}

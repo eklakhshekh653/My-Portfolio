@@ -1,0 +1,112 @@
+.project-section {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.project1, .project2 {
+    height: 550px;
+    width: 40vw;
+    background-color: darkcyan;
+    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.project1 img, .project2 img {
+    margin-top: 12px;
+    width: 90%;
+    height: auto;
+    box-shadow: 2px 2px 4px black;
+    border-radius: 10px;
+    border: 1px solid black;
+}
+.pr-name {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 30px;
+    color: rgb(247, 248, 247);
+}
+
+.project1 a button, .project2 a button {
+    height: 60px;
+    width: 220px;
+    font-size: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+    background-color: rgb(25, 167, 167);
+    border: 2px solid black;
+    transition: all 0.3s ease-out;
+}
+.project1 a button:hover, .project2 a button:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    color: white;
+    background-color: darkblue;
+}
+.app-btn1{
+    margin-right: 10px;
+}
+.app-btn2{
+    margin-left: 10px;
+}
+
+/* Media Queries */
+
+/* For small screens (up to 600px) */
+@media (max-width: 600px) {
+    .project-section {
+        align-items: center;
+    }
+    .project1, .project2 {
+        width: 90vw;
+        height: auto;
+        padding: 10px;
+        text-align: center;
+    }
+    .app-btn2{
+        position: relative;
+        right: 8px;
+    }
+    .pr-name {
+        font-size: 30px;
+        margin-top: 20px;
+    }
+    .project1 a button, .project2 a button {
+        width: 280px;
+        font-size: 19px;
+        height: 50px;
+    }
+}
+
+/* For medium screens (601px - 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .project1, .project2 {
+        width: 45vw;
+        height: auto;
+        padding: 10px;
+    }
+    .pr-name {
+        font-size: 40px;
+    }
+    .project1 a button, .project2 a button {
+        width: 200px;
+        font-size: 22px;
+        height: 60px;
+    }
+}
+
+/* For large screens (1025px and up) */
+@media (min-width: 1025px) {
+    .project1, .project2 {
+        width: 40vw;
+        height: 550px;
+    }
+    .pr-name {
+        font-size: 50px;
+    }
+}

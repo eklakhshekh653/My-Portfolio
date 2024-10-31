@@ -1,0 +1,63 @@
+.skill h1 {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.line-1,.line-2 {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+.box1,.box2 {
+    height: 230px;
+    width: 230px;
+    border: 2px solid darkcyan;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+    .skill h1 {
+        font-size: 30px;
+    }
+    
+    .box1, .box2 {
+        width: 180px; 
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skill h1 {
+        font-size: 25px;
+    }
+    
+    .line-1,
+    .line-2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .box1,.box2 {
+        width: 160px;
+        height: 164px;
+        
+    }
+    .skill-box{
+        display: flex;
+        justify-content: space-around;
+    }
+    .line-1 div img{
+        height: 150px;
+    }
+    .line-2 div img{
+        height: 150px;
+    }
+}
